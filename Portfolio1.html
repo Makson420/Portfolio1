@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Portfolio Maks</title>
+   
+</head>
+<body class="no-scroll">
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="user">
+                    <div class="user__avatar">
+                        <img src="assets/images/avatar.jpg" alt="">
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">
+                            Maksym<br>Maksymenko
+                        </div>
+                        <div class="user__prof">
+                            Front end Developer
+                        </div>
+                    </div>
+                </div>
+                <nav class="nav" id='nav'>
+                    <a href="#works" class="nav__link">works</a>
+                    <a href="#about" class="nav__link">about me</a>
+                    <a href="#skills" class="nav__link">skills</a>
+                    <a href="" data-modal="#modal_hire_me" class="nav__link">contact</a>
+                    <a href="" class="nav__link nav__link--btn" data-modal="#modal_hire_me">hire me</a>
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                   <img class="burger__icon" src="assets/images/burger%20(3).png" alt="">
+            </button>
+            </div>
+        </div>
+    </header>
+
+    
+    
+    <section class="intro">
+        <div class="container">
+           
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__subtitle">Hello i'm</h2>
+                    <h1 class="intro__title">Maks Maksymenko</h1>
+                    <div class="intro__text">Front end Developer</div>
+                
+                
+                <div class="social">
+                    <a href="https://github.com/Makson420" class="social__link" target="_blank">
+                        <img src="assets/images/git.png" alt="">
+                    </a>
+                    
+                     <a href="https://t.me/makson420" class="social__link" target="_blank">
+                        <img src="assets/images/telegram.png" alt="">
+                    </a>
+                    <a href="" class="social__link" target="_blank">
+                        <img src="assets/images/Be.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/maks.maksimenko.35" class="social__link" target="_blank">
+                        <img src="assets/images/Fb.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/makson__4_20__/" class="social__link" target="_blank">
+                        <img src="assets/images/Instagram.png" alt="">
+                    </a>
+                    <a href="https://twitter.com/makson_23" class="social__link" target="_blank">
+                        <img src="assets/images/Twitter.png" alt="">
+                    </a>
+                </div>
+                <a class="btn btn-lite" href="#" data-modal="#modal_hire_me">hire me</a>
+                <button class="btn btn-lite" type="button" data-modal="#modal_resume">see my resume</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    <div class="works" id="works">
+        <div class="container">
+            
+            <div class="works__nav">
+                <a href="#" class="works__nav-link" data-filter="all">all</a>
+                <a href="#" class="works__nav-link" data-filter="landing">landing pages</a>
+                <a href="#" class="works__nav-link" data-filter="websites">websites</a>
+                <a href="#" class="works__nav-link" data-filter="interaction">interaction</a>
+            </div>
+            
+            
+            <div class="portfolio">
+                <div class="portfolio__col" data-cat="landing">
+                   
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="http://placehold.it/370x300" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">Landing page</div>
+                            <div class="work__title">
+                               Project title
+                                <time class="work__date" datetime="2021-06-05 15:30">2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="websites">
+                       <div class="work" data-modal="#modal_project_2">
+                        <img class="work__image" src="http://placehold.it/370x300" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category website</div>
+                            <div class="work__title">
+                               Project title
+                                <time class="work__date" datetime="2021-06-05 15:30">2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="interaction">
+                       <div class="work">
+                        <img class="work__image" src="http://placehold.it/370x300" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category interaction</div>
+                            <div class="work__title">
+                               Project title
+                                <time class="work__date" datetime="2021-06-05 15:30">2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="websites">
+                       <div class="work">
+                        <img class="work__image" src="http://placehold.it/370x300" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category website</div>
+                            <div class="work__title">
+                               Project title
+                                <time class="work__date" datetime="2021-06-05 15:30">2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="interaction">
+                       <div class="work">
+                        <img class="work__image" src="http://placehold.it/370x300" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category interaction</div>
+                            <div class="work__title">
+                               Project title
+                                <time class="work__date" datetime="2021-06-05 15:30">2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="landing">
+                       <div class="work">
+                        <img class="work__image" src="http://placehold.it/370x300" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">Landing page</div>
+                            <div class="work__title">
+                               Project title
+                                <time class="work__date" datetime="2021-06-05 15:30">2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+            <a href="" class="btn btn--sm">load more work</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__inner">
+              <div class="about__photo">
+                  <img class="img" src="assets/images/about.jpg" alt="">
+              </div>
+              <div class="about__content">
+                  <div class="about__header">
+                      <h2 class="about__title">About me</h2>
+                          <div class="about__icon">
+                            <i class="fas fa-user-alt"></i>
+                          </div>
+                  </div>
+                  <div class="about__text">
+                      <p> Welcome to my portfolio site. My name is Maksim. I live in Kharkov.
+                      </p>
+                      <p>I am engaged in HTML-layout of sites. I have a completely cross-browser,
+              responsive and valid layout. To ensure that the requirements for site layout are
+              met in the process of working on a project, I use the Gulp project builder to automate
+              the layout process, Less / Sass preprocessors for faster site styling and more
+              flexible code, Pug template engine, Pixel Perfect for layout that matches the provided
+              layout " pixel to pixel ”, BEM, Bootstrap, Smartgrid and media queries for responsive
+              site layout. At the end of the work, the layout display is checked in various
+              browsers on different devices, the code is checked by the validator for compliance
+              with standards, and the identified errors are eliminated.         </p>
+                  </div>
+                  <div class="text-center">
+                  <a href="" class="btn" data-modal="#modal_hire_me">hire me</a>
+                <button class="btn" type="button" data-modal="#modal_resume">see my resume</button>
+                </div>
+              </div>  
+            </div>
+        </div>
+    </section>
+    
+    <div class="skills" id="skills">
+        <div class="container">
+            
+            <div class="about__header">
+            <h2 class="about__title">Skills</h2>
+            <div class="about__icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+          </div>
+          <div class="skill">
+           <div class="skill__items">
+                <ul class="skill__text">
+                  <h4 class="skill__title">HTML5/CSS3</h4>
+                  <li>Valid, cross-browser code</li>
+                  <li>Semantic layout</li>
+                  <li>Structured code</li>
+                  <li>Animation, hover effects without JS</li>
+                  <li>PixelPerfect</li>
+                  <li>BEM methodology</li>
+                </ul>
+            </div>
+            <div class="skill__items">
+                <ul class="skill__text">
+                  <h4 class="skill__title">Less/Sass</h4>
+                  <li>Accelerated website styling</li>
+                  <li>More flexible code</li>
+                  <li>Improved style logic</li>
+                  <li>Simplified syntax</li>
+                  <li>Nesting selectors without layout errors</li>
+                  <li>Creating sprites</li>
+                </ul>
+              </div>
+            <div class="skill__items">  
+                <ul class="skill__text">
+                  <h4 class="skill__title">Photoshop/Figma</h4>
+                  <li>Slicing images from layout</li>
+                  <li>Optimizing images for the Web</li>
+                  <li>Exporting SVG images</li>
+                  <li>Export Styles for Fast Layout</li>
+                  <li>Creating sprites</li>
+                </ul>
+            </div>
+            <div class="skill__items">        
+                <ul class="skill__text">
+                  <h4 class="skill__title">Gulp</h4>
+                  <li>Develop in any language</li>
+                  <li>Create assets with any tool</li>
+                  <li>Write using any format</li>
+                  <li>Get compiled code</li>
+                  <li>Get optimized images</li>
+                  <li>Get rendered content</li>
+                </ul>
+                </div>          
+            <div class="skill__items">    
+                <ul class="skill__text">
+                    <h4 class="skill__title">JQuery/Bootstrap</h4>
+                  <li>High speed of website development</li>
+                  <li>Cross-browser compatibility and site responsiveness</li>
+                  <li>Ready-made website element templates</li>
+                  <li>Optimized navigation</li>
+                </ul>
+                </div>
+    
+              <div class="skill__items">    
+                <ul class="skill__text">
+                  <h4 class="skill__title">Javascript</h4>
+                  <li>In the process of studying</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__social">
+                       <a class="footer__social-link" href="" target="_blank">
+                           <i class="fab fa-behance"></i>
+                       </a>
+                        <a class="footer__social-link" href="" target="_blank">
+                           <i class="fab fa-github"></i>
+                       </a>
+                       <a class="footer__social-link" href="https://t.me/makson420" target="_blank">
+                           <i class="fab fa-telegram-plane"></i>
+                       </a>
+                      
+                       <a class="footer__social-link" href="https://www.facebook.com/maks.maksimenko.35" target="_blank">
+                           <i class="fab fa-facebook-f"></i>
+                       </a>
+                       <a class="footer__social-link" href="https://www.instagram.com/makson__4_20__/" target="_blank">
+                           <i class="fab fa-instagram"></i>
+                       </a>
+                       <a class="footer__social-link" href="https://twitter.com/makson_23" target="_blank">
+                       <i class="fab fa-twitter"></i>
+                       </a>
+                </div>
+                
+                <nav class="footer__nav">
+                    <a href="#works" class="footer__nav-link">Works</a>
+                    <a href="#about" class="footer__nav-link">About Me</a>
+                    <a href="#skills" class="footer__nav-link">Skills</a>
+                    <a href="" class="footer__nav-link">Contact</a>
+                    <a href="" class="footer__nav-link footer__nav-link--btn" data-modal="#modal_hire_me">
+                    Hire Me
+                    </a>
+                </nav>
+                </div>
+            </div>
+       </footer>
+    
+    
+      <div class="modal" id="modal_project_1">
+       <div class="modal__dialog">
+       
+       <button class="modal__close" type="button" data-close>
+           <i class="fas fa-times"></i>
+       </button>
+    
+       <div class="modal-work">
+        <div class="modal-work__preview">
+           <div data-slider="slick">
+           <div>
+            <img class="modal-work__photo" 
+            src="http://placehold.it/790x815" alt="">
+            </div>
+             <div>
+            <img class="modal-work__photo" 
+            src="http://placehold.it/790x815/333" alt="">
+            </div>
+        </div>
+        </div>
+        <div class="modal-work__content">
+            <div class="modal-work__header">
+                <h3 class="modal-work__title">Project title</h3>
+                <div class="modal-work__info">
+                    category <span class="modal-work__info-divider">|</span> 2021
+                </div>
+            </div>
+            
+            <div class="modal-work__client">
+                <div class="modal-work__client-title">Client:</div> 
+                <div class="modal-work__client-company">Creative Agency</div> 
+            </div>
+            <div class="modal-work__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
+            </div>
+            <div class="modal-work__footer">
+                <button class="modal-work__btn slickPrev" type="button">
+                <i class="fas fa-angle-left"></i>
+                    Previous
+                </button>
+                <button class="modal-work__btn slickNext" type="button">
+                    Next
+                <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    <div class="modal" id="modal_project_2">
+       <div class="modal__dialog">
+       
+       <button class="modal__close" type="button" data-close>
+           <i class="fas fa-times"></i>
+       </button>
+    
+       <div class="modal-work">
+        <div class="modal-work__preview">
+           <div data-slider="slick">
+           <div>
+            <img class="modal-work__photo" 
+            src="http://placehold.it/790x815" alt="">
+            </div>
+             <div>
+            <img class="modal-work__photo" 
+            src="http://placehold.it/790x815/333" alt="">
+            </div>
+        </div>
+        </div>
+        <div class="modal-work__content">
+            <div class="modal-work__header">
+                <h3 class="modal-work__title">Project title 2</h3>
+                <div class="modal-work__info">
+                    category <span class="modal-work__info-divider">|</span> 2021
+                </div>
+            </div>
+            
+            <div class="modal-work__client">
+                <div class="modal-work__client-title">Client:</div> 
+                <div class="modal-work__client-company">Creative Agency</div> 
+            </div>
+            <div class="modal-work__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
+            </div>
+            <div class="modal-work__footer">
+                <button class="modal-work__btn slickPrev" type="button">
+                <i class="fas fa-angle-left"></i>
+                    Previous
+                </button>
+                <button class="modal-work__btn slickNext" type="button">
+                    Next
+                <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="modal" id="modal_resume">
+       <div class="modal__dialog">
+       
+           <button class="modal__close" type="button" data-close>
+               <i class="fas fa-times"></i>
+           </button>
+           <div class="modal__content">
+                <h3 class="modal__title  text-center">RESUME</h3>
+                <div class="text-center">
+                    <a href="" class="btn btn--thin">DOWNLOAD PDF</a>
+                    <a href="" class="btn btn--thin">PRINT</a>
+               </div>
+               
+               <div class="timeline">
+                   <div class="timeline__col timeline__col--left">
+                      
+                      <h4 class="timeline__title">Knowledge of languages </h4>
+                      
+                      <div class="timeline__item">
+                          
+                           <h5 class="timeline__subtitle">Russian - Native</h5>
+                            <h5 class="timeline__subtitle">Ukrainian - C2 - Perfect</h5>
+                            <h5 class="timeline__subtitle">English - A2 - Pre-Intermediate</h5>
+    
+                       </div>
+                      
+                       <h4 class="timeline__title">EXPERIENCE</h4>
+                       
+                       <div class="timeline__item">
+                           <time class="timeline__date" datetime="05-25-2021">2018 - <b>2021</b></time>
+                           <h5 class="timeline__subtitle">FOP Kapustyanskaya I.L</h5>
+                           <div class="timeline__position">Chemical distribution operator</div>
+                           <div class="timeline__text">
+                               <p>Acceptance and distribution of raw materials, refueling of processing devices, maintenance of all electrical equipment in good condition.</p>
+                           </div>
+                       </div>
+                      <div class="timeline__item">
+                           <time class="timeline__date" datetime="05-25-2021">07.13.2019 - <b>01.08.2020</b></time>
+                           <h5 class="timeline__subtitle">Panorama restorant</h5>
+                           <div class="timeline__position">Hookah man</div>
+                           <div class="timeline__text">
+                               <p>I met guests, took orders, placed orders and took them out to the guests.
+                               I was responsible for my work and kept my workplace clean.
+                               </p>
+                           </div>
+                       </div>
+                      <h4 class="timeline__title">Driving experience</h4>
+    
+                       <div class="timeline__item">
+                           <h5 class="timeline__subtitle">Category B rights</h5>
+                           <div class="timeline__position">Have your own car </div>
+                       </div>
+    
+                       
+                   </div>
+                   <div class="timeline__col timeline__col--right">
+                       <h4 class="timeline__title">EDUCATION</h4>
+                       
+                         <div class="timeline__item">
+                           <time class="timeline__date" datetime="05-25-2021">2021 - <b>Present</b></time>
+                           <h5 class="timeline__subtitle">Online courses</h5>
+                           <div class="timeline__position">Front-end Basic</div>
+                       </div>
+                       
+                        <div class="timeline__item">
+                           <time class="timeline__date" datetime="05-25-2021">2017 - <b>2021</b></time>
+                           <h5 class="timeline__subtitle">Kharkiv National University of Radio Electronics, Kharkiv</h5>
+                           <div class="timeline__position">Magistracy Radio engineering</div>
+                       </div>
+                       
+                       <div class="timeline__item">
+                           <time class="timeline__date" datetime="05-25-2021">2013 - 2017</time>
+                           <h5 class="timeline__subtitle">Kharkiv Fakhovy College information technologies State University of Telecommunications</h5>
+                           <div class="timeline__position">Radio communication, radio communication and television communication</div>
+                           </div>
+                           
+                       <h4 class="timeline__title">Skills</h4>
+                
+                         <div class="progress-bar">
+                          <div class="progress-bar__left">HTML5/CSS3</div> 
+                          <div class="progress-bar__right">
+                             <ul>
+                              <li>Valid, cross-browser code</li>
+                              <li>Semantic layout</li>
+                              <li>Structured code</li>
+                              <li>Less,Sass</li>
+                              <li>Animation, hover effects without JS</li>
+                              <li>PixelPerfect</li>
+                              <li>BEM methodology</li>
+                             </ul>
+                          </div> 
+                          </div>
+                          
+                           <div class="progress-bar">
+                          <div class="progress-bar__left">
+                          Photoshop/Figma
+                          </div> 
+                          <div class="progress-bar__right">
+                             <ul>
+                              <li>Slicing images from layout</li>
+                              <li>Optimizing images for the Web</li>
+                              <li>Exporting SVG images</li>
+                              <li>Export Styles for Fast Layout</li>
+                              <li>Creating sprites</li>
+                             </ul>
+                          </div> 
+                          </div>
+                          
+                          <div class="progress-bar">
+                          <div class="progress-bar__left">
+                            Frameworks
+                          </div> 
+                          <div class="progress-bar__right">
+                             <ul>
+                              <li>jQuery</li>
+                              <li>Bootstrap</li>
+                             </ul>
+                          </div> 
+                          </div>
+                          
+                           <div class="progress-bar">
+                          <div class="progress-bar__left">Javascript</div> 
+                          <div class="progress-bar__right">
+                             <ul>
+                              <li>In the process of studying</li>
+                             </ul>
+                          </div> 
+                          </div>
+                          </div>
+                       </div>
+                       <div class="text-center">
+                           <a href="" class="btn" data-modal="#modal_hire_me">Hire me</a>
+                       </div>
+                   
+                   </div>
+               </div>
+       
+            </div>
+            
+    <div class="modal" id="modal_hire_me">
+       <div class="modal__dialog modal__dialog--sm">
+       
+           <button class="modal__close" type="button" data-close>
+               <i class="fas fa-times"></i>
+           </button>
+                       
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title  mb-0">LET'S TALK!</h3>
+                    <h4 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h4>
+                    
+                    <ul class="contact__info">
+                        <li class="contact__info-item">
+                           <i class="fas fa-phone-square-alt"></i>
+                            +380672986290
+                        </li>
+                        <li class="contact__info-item">
+                           <i class="fas fa-envelope"></i>
+                            maximenko1998@gmail.com
+                        </li>
+                    </ul>
+                    
+                    <form class="form" action="/" method="post">
+                       <div class="form__group">
+                        <label class="form__label" for="input-email" >Adress e-mail</label>
+                        <input class="form__input" name="input-email" type="text"  id="input-email" placeholder="Adress e-mail">
+                        </div>
+                        
+                        <div class="form__group">
+                        <label class="form__label" for="input-text" >Request</label>
+                        <textarea class="form__textarea" name="input-text"  id="input-text" placeholder="Type your request..."></textarea>
+                        </div>
+                        
+                        <div class="text-right">
+                            <button class="btn" type="submit">SEND</button>
+                        </div>
+                    </form>
+                    
+                    
+                </div>
+                <div class="contact__right">
+                    <img src="assets/images/talk.jpg" alt="" class="contact__img">
+                </div>
+            </div>
+                
+           
+        </div>
+    </div>    
+<script src="assets/js/jquery.js" ></script>
+    
+    <script src="assets/js/slick.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/4542c2f82e.js" crossorigin="anonymous"></script>
+</body>
+</html>
