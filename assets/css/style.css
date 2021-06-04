@@ -53,7 +53,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slick-list.dragging {
-    cursor: pointer;
     cursor: hand;
 }
 
@@ -178,7 +177,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
     padding: 1.2rem 0;
-    position: relative;
     width: 100%;
     position: absolute;
     top: 0;
@@ -308,7 +306,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 30px;
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 20px;
-    transition: background-color .2s linear, color .2s linear;
+    transition: background-color
+ .2s linear, color
+ .2s linear;
 }
 
 .nav__link--btn:hover {
@@ -447,7 +447,6 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     transition: -webkit-transform .2s linear;
     transition: transform .2s linear;
-    transition: transform .2s linear, -webkit-transform .2s linear;
 }
 
 .social__link:hover {
@@ -489,7 +488,8 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 1.8em;
     background: none;
     cursor: pointer;
-    transition: background-color .2s linear, color .2s linear;
+    transition: background-color .2s
+ linear, color .2s linear;
 }
 
 .btn:focus {
@@ -508,7 +508,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 565px) {
     .btn + .btn {
-        margin-left: 0rem;
+        margin-left: 0;
         margin-top: .5rem;
     }
 }
@@ -811,7 +811,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-align: normal;
+    -ms-flex-align: center;
     align-items: normal;
     -ms-flex-line-pack: normal;
     align-content: normal;
@@ -988,7 +988,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     transition: -webkit-text-decoration .2s linear;
     transition: text-decoration .2s linear;
-    transition: text-decoration .2s linear, -webkit-text-decoration .2s linear;
+
 }
 
 .footer__nav-link:hover {
@@ -1043,9 +1043,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(0);
     transition: -webkit-transform .3s linear;
     transition: transform .3s linear;
-    transition: transform .3s linear, -webkit-transform .3s linear;
 }
-
 @media (max-width: 1199px) {
     .modal__dialog {
         max-width: 900px;
@@ -1062,7 +1060,6 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     transition: -webkit-transform .2s linear;
     transition: transform .2s linear;
-    transition: transform .2s linear, -webkit-transform .2s linear;
 }
 
 .modal__close i {
@@ -1392,7 +1389,7 @@ h1, h2, h3, h4, h5, h6 {
 .timeline__date {
     display: block;
     text-decoration: underline;
-    font-style: 0.94rem;
+    font-size: 0.94rem;
     color: #2b2a2c;
 }
 
