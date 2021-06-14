@@ -35,15 +35,15 @@
                     </div>
                 </div>
                 <nav class="nav" id='nav'>
-                    <a href="#works" class="nav__link">works</a>
-                    <a href="#about" class="nav__link">about me</a>
-                    <a href="#skills" class="nav__link">skills</a>
+                    <a data-goto=".first" href="" class="nav__link">works</a>
+                    <a data-goto=".second" href="" class="nav__link">about me</a>
+                    <a data-goto=".third"  href="" class="nav__link">skills</a>
                     <a href="" data-modal="#modal_hire_me" class="nav__link">contact</a>
                     <a href="" class="nav__link nav__link--btn" data-modal="#modal_hire_me">hire me</a>
                 </nav>
-                <button class="burger" type="button" id="navToggle">
-                   <img class="burger__icon" src="assets/images/burger%20(3).png" alt="">
-            </button>
+                <div class="burger">
+                    <span></span>
+                </div>
             </div>
         </div>
     </header>
@@ -90,7 +90,7 @@
     </section>
     
     
-    <div class="works" id="works">
+    <div class="works first" id="works">
         <div class="container">
             
             <div class="works__nav">
@@ -105,11 +105,11 @@
                 <div class="portfolio__col" data-cat="landing">
                    
                     <div class="work" data-modal="#modal_project_1">
-                        <img class="work__image" src="https://placehold.it/370x300" alt="">
+                        <img class="work__image" src="assets/images/landing1.png" alt="">
                         <div class="work__content">
                             <div class="work__cat">Landing page</div>
                             <div class="work__title">
-                               Project title
+                               First Project
                                 <time class="work__date" datetime="2021-06-05 15:30">2021</time>
                             </div>
                         </div>
@@ -183,7 +183,7 @@
     </div>
     
     
-    <section class="about" id="about">
+    <section class="about second" id="about">
         <div class="container">
             <div class="about__inner">
               <div class="about__photo">
@@ -218,7 +218,7 @@
         </div>
     </section>
     
-    <div class="skills" id="skills">
+    <div class="skills third" id="skills">
         <div class="container">
             
             <div class="about__header">
@@ -332,9 +332,9 @@
                 </div>
                 
                 <nav class="footer__nav">
-                    <a href="#works" class="footer__nav-link">Works</a>
-                    <a href="#about" class="footer__nav-link">About Me</a>
-                    <a href="#skills" class="footer__nav-link">Skills</a>
+                    <a data-goto=".first" href="" class="footer__nav-link">Works</a>
+                    <a data-goto=".second" href="" class="footer__nav-link">About Me</a>
+                    <a data-goto=".third" href="" class="footer__nav-link">Skills</a>
                     <a href="" class="footer__nav-link">Contact</a>
                     <a href="" class="footer__nav-link footer__nav-link--btn" data-modal="#modal_hire_me">
                     Hire Me
@@ -353,50 +353,52 @@
        </button>
     
        <div class="modal-work">
-        <div class="modal-work__preview">
-           <div data-slider="slick">
-           <div>
-            <img class="modal-work__photo" 
-            src="https://placehold.it/790x815" alt="">
-            </div>
-             <div>
-            <img class="modal-work__photo" 
-            src="https://placehold.it/790x815/333" alt="">
-            </div>
-        </div>
-        </div>
+           <div class ="modal-work__preview">
+               <div data-slider="slick" class="slick">
+                   <div>
+                       <img src="assets/images/landingSl.png">
+                   </div>
+                   <div>
+                       <img src="assets/images/landingslide.png">
+                   </div>
+               </div>
+           </div>
         <div class="modal-work__content">
             <div class="modal-work__header">
-                <h3 class="modal-work__title">Landing page</h3>
+                <h3 class="modal-work__title">First project</h3>
                 <div class="modal-work__info">
-                    category <span class="modal-work__info-divider">|</span> 2021
+                    Landing pages <span class="modal-work__info-divider">|</span> 2021
                 </div>
             </div>
             
             <div class="modal-work__client">
-                <div class="modal-work__client-title">Client:</div> 
-                <div class="modal-work__client-company">Creative Agency</div> 
+                <div class="modal-work__client-title">Client:</div>
+                <div class="modal-work__client-company">My own project</div>
             </div>
             <div class="modal-work__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
-            </div>
+
+                <p>
+                    I would like to present my "Landing Page" project. The entire
+                    front-end was done by hand and head. For more information on the
+                    site, please follow the link
+                    <a class="work__text-link" href="https://makson420.github.io/LandingGit/" target="_blank">makson420.
+                        github.io/LandingGit</a>, or see my code on the link
+                    <a class="work__text-link" href="https://github.com/Makson420" target="_blank">github.com/Makson420</a>.</p>
+                   </div>
             <div class="modal-work__footer">
                 <button class="modal-work__btn slickPrev" type="button">
-                <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-angle-left"></i>
                     Previous
                 </button>
                 <button class="modal-work__btn slickNext" type="button">
                     Next
-                <i class="fas fa-angle-right"></i>
+                    <i class="fas fa-angle-right"></i>
                 </button>
             </div>
         </div>
     </div>
     </div>
     </div>
-    
     
     
     
@@ -408,19 +410,18 @@
        </button>
     
        <div class="modal-work">
-        <div class="modal-work__preview">
-           <div data-slider="slick">
-           <div>
-            <img class="modal-work__photo" 
-            src="https://placehold.it/790x815" alt="">
-            </div>
-             <div>
-            <img class="modal-work__photo" 
-            src="https://placehold.it/790x815/333" alt="">
-            </div>
-        </div>
-        </div>
-        <div class="modal-work__content">
+           <div class ="modal-work__preview">
+               <div data-slider="slick" class="slick">
+                       <div>
+                           <img src="">
+                       </div>
+                       <div>
+                           <img src="">
+                       </div>
+               </div>
+           </div>
+
+           <div class="modal-work__content">
             <div class="modal-work__header">
                 <h3 class="modal-work__title">Project title 2</h3>
                 <div class="modal-work__info">
@@ -434,8 +435,7 @@
             </div>
             <div class="modal-work__text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laborum a voluptatem. Autem, ad deserunt odit culpa possimus, qui laboriosam fugiat veritatis sapiente officiis cupiditate. Eaque ex iure possimus facilis.</p>
             </div>
             <div class="modal-work__footer">
                 <button class="modal-work__btn slickPrev" type="button">
@@ -654,6 +654,7 @@
     <script src="assets/js/slick.js"></script>
 
     <script src="assets/js/app.js"></script>
+
     <script src="https://kit.fontawesome.com/4542c2f82e.js" crossorigin="anonymous"></script>
 </body>
 </html>
